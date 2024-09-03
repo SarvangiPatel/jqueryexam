@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- cnd -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Preloader</title>
+</head>
+<body>
+
+    <div class='loader'>
+        <div class='loader-container'>
+          <div class='progress progress-striped active'>
+            <div class='progress-bar progress-bar-color' id='bar' role='progressbar' style='width: 0%;'></div>
+          </div>
+        </div>
+      </div>
+      <div class="work_content">
+        <div class="wrap">
+        <span class="copyrights"><h1>Hello World</h1>
+      </div>
+      </div>
+
+
+      <script>
+        var progress = setInterval(function () {
+    var $bar = $("#bar");
+    var screenWidth = $(window).width();
+
+    if ($bar.width() >= screenWidth) {
+        clearInterval(progress);
+        $bar.width(screenWidth);
+        $(".loader").fadeOut(1000); 
+    } else {
+        $bar.width($bar.width() + (screenWidth / 10)); 
+    }
+
+    var percentage = Math.round(($bar.width() / screenWidth) * 100); 
+    $bar.text(percentage + "%");
+}, 300);
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+.faq{
+    width: 50%;
+    height: 450px;
+    margin: auto;
+    background-color: whitesmoke;
+}
+.ques{
+    height: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+ i{
+    margin-right: 30px;
+    font-size: 20px;
+}

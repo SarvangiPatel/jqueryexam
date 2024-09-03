@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    font-family: 'Lato', sans-serif; 
+    background-color: #222;
+  }
+  
+  .loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: rgb(249,249,249);
+  }
+  .loader-container {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+    text-align: right;
+  }
+  
+  .glow {
+    width: 0%;
+    height: 0%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px 10px #008737;
+    position: absolute;
+    bottom: -5px;
+    animation: animation 5s infinite;
+  }
+  
+  @keyframes animation {
+    10% {
+      opacity: 0.9;
+    }
+    30% {
+      opacity: 0.86;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    80% {
+      opacity: 0.75;
+    }
+  }
+  
+  .wrap { 
+    color:#fff;
+    background-position: left top; 
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+    width: 100%; 
+    height: 100%; 
+    position: relative;  
+    z-index : 1; 
+    text-align:center;
+  }
+  
+  h1{
+    font-size:4em;
+    color:#fff;
+      text-align:center;
+  }
+  .progress-bar-color {
+      background-color: #000;
+      height: 180px;
+      color: #fff;
+      font-size: 80px;
+      vertical-align: middle;
+  }

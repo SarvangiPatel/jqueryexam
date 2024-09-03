@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accordian.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>FAQ's</title>
+</head>
+<body>
+    
+    <div class="faq">
+        <div class="que1 ques">1] What is Jquery ?<i class="ri-arrow-down-s-line"></i></div>
+        <div class="ans1">ans] Jquery is a lightweight Javascript Library.</div>
+
+        <div class="que2 ques">2] What is Jquery ?<i class="ri-arrow-down-s-line"></i></div>
+        <div class="ans2">ans] Jquery is a lightweight Javascript Library.</div>
+
+        <div class="que3 ques">3]What is Jquery ?<i class="ri-arrow-down-s-line"></i></div>
+        <div class="ans3">ans] Jquery is a lightweight Javascript Library.</div>
+
+        <div class="que4 ques">4] What is Jquery ?<i class="ri-arrow-down-s-line"></i></div>
+        <div class="ans4">ans] Jquery is a lightweight Javascript Library.</div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.que1').click(function(){
+                $('.ans1').slideToggle(2000);
+            })
+        })
+
+        $(document).ready(function(){
+            $('.que2').click(function(){
+                $('.ans2').slideToggle(2000);
+            })
+        })
+
+        $(document).ready(function(){
+            $('.que3').click(function(){
+                $('.ans3').slideToggle(2000);
+            })
+        })
+
+        $(document).ready(function(){
+            $('.que4').click(function(){
+                $('.ans4').slideToggle(2000);
+            })
+        })
+    </script>
+
+</body>
+</html>
